@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "aula-001",
+  "version": "1.0.0",
+  "main": "aula001_variaveis.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
