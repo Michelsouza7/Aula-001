@@ -1,16 +1,19 @@
 const prompt = require("prompt-sync")();
 console.clear()
 
-console.log('A copa do QATAR vai começar!');
-console.log('Vocês estão animados?');
-console.log('Quem será o nosso herói? Será ele o Neymar?');
-console.log('1. (sim) 2. (não)');
+console.log("A copa do QATAR vai começar!\n");
+console.log("Vocês estão animados?");
+console.log("Quem será o nosso herói? Será ele o Neymar?\n");
 
-pergunta1 = +prompt('O Brasil estará na copa?');
-pergunta2 = +prompt('Neymar será o melhor jogador?');
-pergunta3 = +prompt('Neymar será o artilheiro?');
-pergunta4 = +prompt('O Brasil será campeão?');
-pergunta5 = +prompt('Neymar será nosso herói?');
+pergunta1 = +prompt('O Brasil estará na copa? [1]SIM [2]NÃO ');
+console.log()
+pergunta2 = +prompt('Neymar será o melhor jogador? [1]SIM [2]NÃO ');
+console.log()
+pergunta3 = +prompt('Neymar será o artilheiro? [1]SIM [2]NÃO ');
+console.log()
+pergunta4 = +prompt('O Brasil será campeão? [1]SIM [2]NÃO ');
+console.log()
+pergunta5 = +prompt('Neymar será nosso herói? [1]SIM [2]NÃO ');
 
 let pontuacao = 0
 
@@ -31,13 +34,14 @@ pontuacao++
 }
 
 if (pontuacao == 0) {
-console.log(`Horivel`);
+console.log(`\nHorivel`);
 } else if (pontuacao == 1 || pontuacao == 2) {
-console.log(`Ruim`);
+console.log(`\nRuim`);
 } else if (pontuacao == 3) {
-console.log(`Médio`);
+console.log(`\nMédio`);
 } else if (pontuacao == 4) {
-console.log(`Bom`);
+console.log(`\nBom`);
 } else if (pontuacao == 5) {
-console.log(`Será nosso herói`);
+console.log(`\nSerá nosso herói`);
 }
+
