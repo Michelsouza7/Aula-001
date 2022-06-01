@@ -1,19 +1,22 @@
 const prompt = require("prompt-sync")();
 console.clear()
 
-console.log("A copa do QATAR vai começar!\n");
-console.log("Vocês estão animados?");
-console.log("Quem será o nosso herói? Será ele o Neymar?\n");
+console.log("Polícia investiga assassinato de homem em São Paulo.\n");
+console.log("Crime aconteceu no sábado, em uma área de mata de São Paulo!");
+console.log("A polícia chega a um suspeito após seguir algumas pistas.");
+console.log("Foram encontrados vestígios de pele nas unhas da vítima!");
 
-pergunta1 = +prompt('O Brasil estará na copa? [1]SIM [2]NÃO ');
+console.log();
+
+pergunta1 = +prompt('Você se sente nervoso ao ser intimado? [1]SIM [2]NÃO ');
 console.log()
-pergunta2 = +prompt('Neymar será o melhor jogador? [1]SIM [2]NÃO ');
+pergunta2 = +prompt('Você conhecia a vítima? [1]SIM [2]NÃO ');
 console.log()
-pergunta3 = +prompt('Neymar será o artilheiro? [1]SIM [2]NÃO ');
+pergunta3 = +prompt('Se sim? [1]SIM [2]NÃO ');
 console.log()
-pergunta4 = +prompt('O Brasil será campeão? [1]SIM [2]NÃO ');
+pergunta4 = +prompt('Ja tiveram algum desentendimento mal resolvido? [1]SIM [2]NÃO ');
 console.log()
-pergunta5 = +prompt('Neymar será nosso herói? [1]SIM [2]NÃO ');
+pergunta5 = +prompt('Possui marcas ou arranhões em seu corpo? [1]SIM [2]NÃO ');
 
 let pontuacao = 0
 
@@ -33,15 +36,10 @@ if (pergunta5 == 1) {
 pontuacao++
 }
 
-if (pontuacao == 0) {
-console.log(`\nHorivel`);
-} else if (pontuacao == 1 || pontuacao == 2) {
-console.log(`\nRuim`);
-} else if (pontuacao == 3) {
-console.log(`\nMédio`);
-} else if (pontuacao == 4) {
-console.log(`\nBom`);
-} else if (pontuacao == 5) {
-console.log(`\nSerá nosso herói`);
+if  (pontuacao  <=  2) {
+    consola . log (`\nVocê é INOCENTE!`)
+}  else  if  (pontuacao  ==  3) {
+    consola . log (`\nVocê é SUSPEITO(A)!`)
+}  else  if  (pontuacao  >=  4) {
+    consola . log (`\nVocê é CULPADO(A)!`)
 }
-
